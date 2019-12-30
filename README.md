@@ -3,6 +3,8 @@
 
 Simple calculator app created with nodeJS backend and React/ES6 frontend.
 
+![alt text](https://github.com/Skeletor48/ReactCalculator/blob/master/misc/Screenshot%202019-12-30%20at%2017.46.57.png)
+
 I choosed two handle them completely separated so both the client and the server has its own package.json with their own starting scripts.
 
 The Server has two public endpoints `/writeMemory` and `/readMemory`. The endpoints are manipulating a json file.
