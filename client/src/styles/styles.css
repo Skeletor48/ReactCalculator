@@ -1,0 +1,151 @@
+/* Reset CSS*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: inherit;
+}
+
+
+/* Color variables */
+
+:root {
+  --color-grey: #5a5c51;
+  --color-brown: #1d2120;
+  --color-light-cyan: #bcd5d1;
+
+  --color-light-orange: #ba9077;
+
+  --color-brown-transparent: rgba(29, 33, 32, 0.8);
+  --color-cyan-transparent: rgba(188, 213, 209, 0.8);
+  --color-grey-transparent: rgba( 90, 92, 81, 0.8);
+
+
+  --shadow: rgba(0,0,0, .4);
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, var(--color-grey-transparent), var(--color-cyan-transparent)), url(http://sf.co.ua/13/08/wallpaper-3015876.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  height: 80vh;
+  width: 25%;
+  box-shadow: 0 2rem 4rem var(--shadow);
+}
+
+.screen {
+  height: 25vh;
+  width: 100%;
+  padding: 0 2rem;
+  overflow: hidden;
+  white-space: no-wrap;
+  color: var(--color-light-cyan);
+  background-color: var(--color-brown-transparent);
+}
+
+.computation-screen {
+  height: 6vh;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.total-screen {
+  height: 19vh;
+  font-size: 6rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.keypad-row {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  color: var(--color-light-cyan);
+}
+
+.keypad {
+  height: 55vh;
+  width: 100%;
+}
+
+.btn {
+  width: 25%;
+  height: 100%;
+  font-size: 2.8rem;
+  font-family: inherit;
+  color: var(--color-light-cyan);
+  background-color: var(--color-grey-transparent);
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+}
+.btn:hover {
+  font-size:3.7rem;
+  color: var(--color-light-orange);
+  background-color: var(--color-brown-transparent);
+}
+.btn:active {
+  transform: scale(.8);
+}
+
+.btn--primary {
+  color: var(--color-light-cyan);
+}
+.btn--operator {
+  font-size:2rem;
+  color: var(--color-light-orange);
+}
+
+.btn--operator:hover {
+  font-size:3rem;
+  color: var(--color-light-cyan);
+}
+
+.btn--large {
+  width: 50%;
+  color: var(--color-light-cyan);
+  background-color: var(--color-brown-transparent);
+  transition: all .2s;
+}
+
+.btn--large:hover {
+  background-color: var(--color-light-cyan);
+  font-size:3.5rem;
+  color: var(--color-brown);
+}
+
+.btn--memoryOccupied {
+  font-size:2.5rem;
+  font-weight: bolder;
+  color: crimson;
+}
+
+.btn--memoryOccupied:hover {
+  background-color: var(--color-brown-transparent);
+  font-size:3.5rem;
+  color: crimson;
+}
