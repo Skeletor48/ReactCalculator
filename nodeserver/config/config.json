@@ -1,0 +1,29 @@
+{
+  "default":{
+    "http": {
+      "localhost": "0.0.0.0",
+      "port": 8080,
+      "listeningPort": 8080,
+      "serverUrl": "http://localhost"
+    },
+    "memoryFile":"./stores/numberStore.json"
+  },
+  "development":{
+    "http": {
+      "localhost": "0.0.0.0",
+      "port": 6060,
+      "listeningPort": 6060,
+      "serverUrl": "http://localhost"
+    },
+    "memoryFile":"./stores/numberStore.json"
+  },
+  "test":{
+    "http": {
+      "localhost": "0.0.0.0",
+      "port": 3000,
+      "listeningPort": 3000,
+      "serverUrl": "http://localhost"
+    },
+    "memoryFile":"./stores/numberStoreTest.json"
+  }
+}
