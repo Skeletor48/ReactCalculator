@@ -150,11 +150,11 @@ class Calculator extends React.Component {
     return this[handlerMethod](this.state);
   }
 
-  _handleDigitInput(pressedButton, buttonType) {
+  _handleDigitInput(pressedButton) {
     return parseFloat(pressedButton);
   }
 
-  _handleOperatorInput(pressedButton, buttonType) {
+  _handleOperatorInput(pressedButton) {
     if (pressedButton === '.' && !this._isDecimalDotAllowed()) return ''
 
     return this._isOperatorTypeAllowed(pressedButton) ? ` ${pressedButton} ` : '';
